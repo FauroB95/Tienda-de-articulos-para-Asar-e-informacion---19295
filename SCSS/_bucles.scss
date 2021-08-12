@@ -1,0 +1,13 @@
+$colorFondoContacto: (
+    h6:#317bea,
+    h2: white,
+    h3: darkgoldenrod,
+);
+
+@each $colorFondoContacto, $color in $colorFondoContacto{
+    #{$colorFondoContacto} {
+        color: $color;
+    }
+}
+
+/*Joaco, aca te dejo el DESAFIO COMPLEMENTARIO DE LA CLASE 12*/

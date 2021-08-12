@@ -1,0 +1,729 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  /*box-sizing: border-box;*/ }
+
+/*INDEX*/
+.colorIndex {
+  background-color: lightcyan; }
+
+#instFooter {
+  width: 30px;
+  height: 30px;
+  position: relative; }
+
+#facFooter {
+  width: 30px;
+  height: 30px;
+  position: relative; }
+
+#whatFooter {
+  width: 65px;
+  height: 55px;
+  position: relative;
+  right: 15px; }
+
+#imagLogo {
+  width: 90px;
+  height: 90px;
+  display: block; }
+
+header {
+  background-image: linear-gradient(rgba(106, 189, 182, 0.815), #a1b8bb) !important; }
+
+.divisorOfertas {
+  color: white;
+  background-color: black;
+  font-family: 'Patrick Hand', cursive;
+  font-size: auto;
+  text-align: center;
+  border-radius: 20px;
+  height: 50px;
+  margin-bottom: 15px; }
+
+.divisorRecetas {
+  color: white;
+  background-color: black;
+  font-family: 'Patrick Hand', cursive;
+  font-size: auto;
+  text-align: center;
+  height: 50px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px; }
+
+footer section {
+  background-image: linear-gradient(#a1b8bb, rgba(106, 189, 182, 0.815), #a1b8bb) !important; }
+
+/*Aqui use metodologia BEM 1*/
+.seccionCarrousel {
+  margin-top: 20px;
+  border-radius: 20px; }
+
+.seccionCarrousel__letras {
+  color: black !important;
+  font-weight: bolder; }
+
+.seccionCarrousel--decoracion {
+  text-decoration: underline;
+  color: orange; }
+
+/*Aqui use metodologia BEM 1*/
+/*Aqui use metodologia BEM 2*/
+.titulo {
+  background-color: #ad9b9b;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px; }
+
+.animacionTitulo {
+  margin: auto;
+  display: table; }
+
+.animacionTitulo h1 {
+  float: left;
+  color: black;
+  position: relative;
+  background-color: #ad9b9b;
+  text-align: center; }
+
+.animacionTitulo h1 span {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  background-color: #ad9b9b;
+  border-left: 1px solid black;
+  animation: maquina 4s infinite alternate steps(13); }
+
+@keyframes maquina {
+  from {
+    width: 65%; }
+  to {
+    width: 30%; } }
+
+.animacionTitulo h6 {
+  color: white; }
+
+.titulo__alineado {
+  text-align: center; }
+
+.titulo--alto {
+  padding-top: 20px;
+  margin-top: 10px; }
+
+.titulo--colorFondo {
+  background-color: #f1dcbf;
+  opacity: 0.8;
+  border-radius: 20px; }
+
+.rotarRedes:hover {
+  transform: rotate(60deg); }
+
+.escalarRedes:hover {
+  transform: scale(1.3);
+  background-color: lightblue; }
+
+/*Fin metodologia BEM 2*/
+/*Aqui use metodologia BEM 3*/
+.ofertas {
+  grid-template-columns: 33% 34% 33%;
+  grid-template-areas: "parrilla asadorMovil cuchillo";
+  width: auto;
+  justify-items: center;
+  align-items: center;
+  height: 450px; }
+
+.ofertas__caja1 {
+  grid-area: parrilla;
+  bottom: 70px; }
+
+.ofertas__caja2 {
+  grid-area: asadorMovil;
+  bottom: 70px; }
+
+.ofertas__caja3 {
+  grid-area: cuchillo; }
+
+.ofertas--color {
+  background-color: lightsteelblue; }
+
+.ofertas--colorFondo {
+  background-color: #f1dcbf;
+  border-radius: 20px; }
+
+/*Fin metodologia BEM 3*/
+/*Aqui use metodologia BEM 4*/
+.recetas {
+  grid-template-columns: 33% 34% 33%;
+  grid-template-areas: "parrilla asadorMovil cuchillo";
+  width: auto;
+  justify-items: center;
+  align-items: center;
+  height: 450px;
+  margin-bottom: 20px; }
+
+.recetas__caja1 {
+  grid-area: parrilla; }
+
+.recetas__caja2 {
+  grid-area: asadorMovil; }
+
+.recetas__caja3 {
+  grid-area: cuchillo; }
+
+.recetas--color {
+  background-color: lightsteelblue; }
+
+.recetas--colorFondo {
+  background-color: #f1dcbf;
+  border-radius: 20px; }
+
+/*Fin metodologia BEM 4*/
+/*FIN INDEX*/
+/*PAGINA NOSOTROS*/
+#div1Nosotros {
+  width: 98%;
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f1dcbf;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  margin-top: 20px; }
+
+#div1Nosotros div {
+  flex-basis: 450px; }
+
+/*Aqui use metodologia BEM 5*/
+.chef {
+  height: 350px;
+  border-radius: 20px;
+  border: black solid 2px;
+  text-align: center;
+  font-family: cursive;
+  font-size: small;
+  background-color: white; }
+
+.chef__imgLaucha {
+  width: 100%;
+  height: 350px;
+  border-radius: 20px; }
+
+.chef__titulo {
+  font-family: 'Patrick Hand', cursive;
+  font-size: xx-large;
+  text-decoration: underline black;
+  color: darkgoldenrod; }
+
+.chef__tabla {
+  list-style-type: none;
+  font-family: fantasy;
+  font-size: medium; }
+
+/*Fin metodologia BEM 5*/
+#div2Nosotros {
+  width: 98%;
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f1dcbf;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-bottom: 30px; }
+
+#div2Nosotros div {
+  flex-basis: 450px; }
+
+/*Aqui use metodologia BEM 6*/
+.herrero {
+  height: 350px;
+  border-radius: 20px;
+  border: black solid 2px;
+  text-align: center;
+  font-family: cursive;
+  font-size: small;
+  background-color: white; }
+
+.herrero__imgHerrero {
+  width: 450px;
+  height: 350px;
+  border-radius: 20px; }
+
+.herrero__titulo {
+  font-family: 'Patrick Hand', cursive;
+  font-size: xx-large;
+  text-decoration: underline black;
+  color: darkgoldenrod; }
+
+.herrero__tabla {
+  list-style-type: none;
+  font-family: fantasy;
+  font-size: medium; }
+
+/*Fin metodologia BEM 6*/
+/*FIN PAGINA NOSOTROS*/
+/*PAGINA RECETAS*/
+#div1Recetas {
+  width: 98%;
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f1dcbf;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+#div1Recetas div {
+  flex-basis: 450px; }
+
+.recAchurada {
+  height: 350px;
+  border-radius: 20px;
+  border: black solid 2px;
+  text-align: center;
+  font-family: cursive;
+  font-size: small;
+  background-color: white;
+  margin: auto; }
+
+.recAchurada h3 {
+  font-family: 'Patrick Hand', cursive;
+  font-size: xx-large;
+  text-decoration: underline black;
+  color: darkgoldenrod; }
+
+.recAchurada table {
+  font-family: fantasy; }
+
+.iframeRecAchurada {
+  border-radius: 20px;
+  height: 350px; }
+
+#div2Recetas {
+  width: 98%;
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f1dcbf;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+#div2Recetas div {
+  flex-basis: 450px; }
+
+.recBondiola {
+  height: 350px;
+  border-radius: 20px;
+  border: black solid 2px;
+  text-align: center;
+  font-family: cursive;
+  font-size: small;
+  background-color: white;
+  margin: auto; }
+
+.recBondiola h3 {
+  font-family: 'Patrick Hand', cursive;
+  font-size: xx-large;
+  text-decoration: underline black;
+  color: darkgoldenrod; }
+
+.recBondiola table {
+  font-family: fantasy; }
+
+.iframeRecBondiola {
+  border-radius: 20px;
+  height: 350px; }
+
+#div3Recetas {
+  width: 98%;
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f1dcbf;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+#div3Recetas div {
+  flex-basis: 450px; }
+
+.recCostillar {
+  height: 350px;
+  border-radius: 20px;
+  border: black solid 2px;
+  text-align: center;
+  font-family: cursive;
+  font-size: small;
+  background-color: white; }
+
+.recCostillar h3 {
+  font-family: 'Patrick Hand', cursive;
+  font-size: xx-large;
+  text-decoration: underline black;
+  color: darkgoldenrod; }
+
+.recCostillar table {
+  font-family: fantasy; }
+
+.iframeRecCostillar {
+  border-radius: 20px;
+  height: 350px; }
+
+.colorTabla {
+  background-color: #dd9a6d; }
+
+/*FIN PAGINA RECETAS*/
+/*PRODUCTOS*/
+/*Aqui use metodologia BEM 7*/
+.productos1 {
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas: "parrilla asadorMovil cuchillo disco";
+  width: auto;
+  justify-items: center;
+  align-items: center;
+  height: 450px;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+.productos1__caja1 {
+  grid-area: parrilla;
+  object-fit: cover;
+  object-position: center center; }
+
+.productos1__caja2 {
+  grid-area: asadorMovil;
+  object-fit: cover;
+  object-position: center center; }
+
+.productos1__caja3 {
+  grid-area: cuchillo;
+  object-fit: cover;
+  object-position: center center; }
+
+.productos1__caja4 {
+  grid-area: disco;
+  object-fit: cover;
+  object-position: center center; }
+
+.productos1--color {
+  background-color: lightsteelblue;
+  margin-left: -12px;
+  margin-right: -12px; }
+
+/*Fin metodologia BEM 7*/
+/*Aqui use metodologia BEM 8*/
+.productos2 {
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas: "juego estaca guantes delantal";
+  width: auto;
+  justify-items: center;
+  align-items: center;
+  height: 450px;
+  margin-bottom: 20px; }
+
+.productos2__caja5 {
+  grid-area: juego;
+  object-fit: cover;
+  object-position: center center; }
+
+.productos2__caja6 {
+  grid-area: estaca;
+  object-fit: cover;
+  object-position: center center; }
+
+.productos2__caja7 {
+  grid-area: guantes;
+  object-fit: cover;
+  object-position: center center; }
+
+.productos2__caja8 {
+  grid-area: delantal;
+  object-fit: cover;
+  object-position: center center; }
+
+.productos2--color {
+  background-color: lightsteelblue;
+  margin-left: -12px;
+  margin-right: -12px; }
+
+/*Fin metodologia BEM 8*/
+/*Aqui use metodologia BEM 9*/
+.productos3 {
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas: "brasero parrilla asadormovil cuerno";
+  width: auto;
+  justify-items: center;
+  align-items: center;
+  height: 450px;
+  margin-bottom: 20px; }
+
+.productos3__caja9 {
+  grid-area: brasero;
+  object-fit: cover;
+  object-position: center center; }
+
+.productos3__caja10 {
+  grid-area: parrilla;
+  object-fit: cover;
+  object-position: center center; }
+
+.productos3__caja11 {
+  grid-area: asadormovil;
+  object-fit: cover;
+  object-position: center center; }
+
+.productos3__caja12 {
+  grid-area: cuerno;
+  object-fit: cover;
+  object-position: center center; }
+
+.productos3--color {
+  background-color: lightsteelblue;
+  margin-left: -12px;
+  margin-right: -12px; }
+
+/*Fin metodologia BEM 9*/
+/*FIN PAGINA PRODUCTOS*/
+/*PAGINA CONTACTO*/
+.colorContacto {
+  background-color: #dd9a6d;
+  margin-top: 20px; }
+
+.colorFormulario {
+  background-color: rgba(110, 122, 134, 0.651);
+  margin-top: 20px; }
+
+.row {
+  margin-right: auto !important;
+  margin-left: auto !important;
+  margin-bottom: 20px; }
+
+/*FIN PAGINA CONTACTO*/
+/*FIN ESTILOS NORMALES, DEBAJO ESTAN LOS MEDIA QUERIES*/
+/*Comienzo media queries 992*/
+@media screen and (max-width: 992px) {
+  .ofertas {
+    width: auto;
+    justify-items: center;
+    align-items: center; }
+  #div1Nosotros {
+    width: 96%;
+    height: 750px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 50px; }
+  .chef {
+    width: 90%; }
+  #div1Nosotros div {
+    flex-basis: 40%; }
+  .chef__imgLaucha {
+    width: 100%;
+    height: 100%; }
+  .chef__tabla {
+    bottom: 5px; }
+  #div2Nosotros {
+    width: 96%;
+    height: 800px;
+    position: relative;
+    top: 20px;
+    flex-direction: column;
+    justify-content: space-around; }
+  .herrero {
+    width: 80%; }
+  #div2Nosotros div {
+    flex-basis: 40%; }
+  .herrero__imgHerrero {
+    width: 100%;
+    height: 100%; }
+  .herrero__tabla {
+    top: 5px; }
+  .posicionFooter {
+    position: inherit; }
+  #div1Recetas {
+    width: 96%;
+    height: 800px;
+    position: relative;
+    top: 25px;
+    flex-direction: column;
+    margin-bottom: 50px; }
+  #div1Recetas div {
+    flex-basis: 40%; }
+  .recAchurada {
+    width: 90%; }
+  .recAchurada table {
+    position: sticky; }
+  .iframeRecAchurada {
+    margin-bottom: 40px; }
+  #div2Recetas {
+    width: 96%;
+    height: 800px;
+    position: relative;
+    top: 25px;
+    flex-direction: column; }
+  #div2Recetas div {
+    flex-basis: 40%; }
+  .recBondiola {
+    width: 100%; }
+  #div3Recetas {
+    width: 96%;
+    height: 800px;
+    position: relative;
+    top: 25px;
+    flex-direction: column; }
+  #div3Recetas div {
+    flex-basis: 40%; }
+  .recCostillar {
+    width: 80%; }
+  @keyframes maquina {
+    from {
+      width: 70%; }
+    to {
+      width: 28%; } } }
+
+/*Fin media queries 992*/
+/*Comienzo media queries 768*/
+@media screen and (max-width: 768px) {
+  .ofertas {
+    grid-template-columns: 100%;
+    grid-template-areas: "parrilla" "asadorMovil" "cuchillo";
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    height: 2200px; }
+  .recetas {
+    grid-template-columns: 100%;
+    grid-template-areas: "parrilla" "asadorMovil" "cuchillo";
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    height: 2200px; }
+  @keyframes maquina {
+    from {
+      width: 75%; }
+    to {
+      width: 20%; } } }
+
+/*Fin media queries 768*/
+/*Comienzo media queries 576*/
+@media screen and (max-width: 576px) {
+  .ofertas {
+    grid-template-columns: 100%;
+    grid-template-areas: "parrilla" "asadorMovil" "cuchillo";
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    height: 1220px; }
+  .card {
+    position: unset; }
+  .ofertas__caja1 {
+    grid-area: parrilla;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 30px; }
+  .ofertas__caja2 {
+    grid-area: asadorMovil;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 190px; }
+  .ofertas__caja3 {
+    grid-area: cuchillo;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 350px; }
+  .recetas {
+    grid-template-columns: 100%;
+    grid-template-areas: "parrilla" "asadorMovil" "cuchillo";
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    height: 1500px; }
+  .recetas__caja1 {
+    grid-area: parrilla;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 30px; }
+  .recetas__caja2 {
+    grid-area: asadorMovil;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 80px; }
+  .recetas__caja3 {
+    grid-area: cuchillo;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 130px; }
+  .productos1 {
+    height: auto; }
+  .productos1__caja1 {
+    margin-bottom: 20px; }
+  .productos1__caja2 {
+    margin-bottom: 20px; }
+  .productos1__caja3 {
+    margin-bottom: 20px; }
+  .productos1__caja4 {
+    margin-bottom: 20px; }
+  .productos2 {
+    height: auto; }
+  .productos2__caja5 {
+    margin-top: 50px;
+    margin-bottom: 20px; }
+  .productos2__caja6 {
+    margin-bottom: 20px; }
+  .productos2__caja7 {
+    margin-bottom: 20px; }
+  .productos2__caja8 {
+    margin-bottom: 20px; }
+  .productos3 {
+    height: auto; }
+  .productos3__caja9 {
+    margin-top: 50px;
+    margin-bottom: 20px; }
+  .productos3__caja10 {
+    margin-bottom: 20px; }
+  .productos3__caja11 {
+    margin-bottom: 20px; }
+  .productos3__caja12 {
+    margin-bottom: 20px; }
+  .chef__titulo {
+    font-size: large; }
+  .herrero__titulo {
+    font-size: large; }
+  .chef__tabla {
+    font-size: small; }
+  .chef h3 p {
+    font-size: small; }
+  .herrero__tabla {
+    font-size: small; }
+  .herrero h3 p {
+    font-size: small; }
+  @keyframes maquina {
+    from {
+      width: 100%; }
+    to {
+      width: 0%; } } }
+
+/*Fin media queries 576*/
