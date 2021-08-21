@@ -32,6 +32,11 @@ header {
   background-image: linear-gradient(rgba(106, 189, 182, 0.815), #a1b8bb) !important;
 }
 
+svg {
+  width: 0;
+  height: 0;
+}
+
 .divisorOfertas {
   color: white;
   background-color: black;
@@ -143,6 +148,11 @@ footer section {
   transform: rotate(60deg);
 }
 
+.rotarRedes {
+  width: 60px;
+  height: 60px;
+}
+
 .escalarRedes:hover {
   transform: scale(1.3);
   background-color: lightblue;
@@ -162,15 +172,21 @@ footer section {
 .ofertas__caja1 {
   grid-area: parrilla;
   bottom: 70px;
+  width: 70%;
+  height: 15rem;
 }
 
 .ofertas__caja2 {
   grid-area: asadorMovil;
   bottom: 70px;
+  width: 70%;
+  height: 15rem;
 }
 
 .ofertas__caja3 {
   grid-area: cuchillo;
+  width: 70%;
+  height: 23.8rem;
 }
 
 .ofertas--color {
@@ -196,14 +212,20 @@ footer section {
 
 .recetas__caja1 {
   grid-area: parrilla;
+  width: 70%;
+  height: 24.8rem;
 }
 
 .recetas__caja2 {
   grid-area: asadorMovil;
+  width: 70%;
+  height: 24.8rem;
 }
 
 .recetas__caja3 {
   grid-area: cuchillo;
+  width: 70%;
+  height: 24.8rem;
 }
 
 .recetas--color {
@@ -718,9 +740,7 @@ footer section {
 @media screen and (max-width: 768px) {
   .ofertas {
     grid-template-columns: 100%;
-    grid-template-areas: "parrilla"
- "asadorMovil"
- "cuchillo";
+    grid-template-areas: "parrilla" "asadorMovil" "cuchillo";
     width: 100%;
     justify-items: center;
     align-items: center;
@@ -728,9 +748,7 @@ footer section {
   }
   .recetas {
     grid-template-columns: 100%;
-    grid-template-areas: "parrilla"
- "asadorMovil"
- "cuchillo";
+    grid-template-areas: "parrilla" "asadorMovil" "cuchillo";
     width: 100%;
     justify-items: center;
     align-items: center;
@@ -751,9 +769,7 @@ footer section {
 @media screen and (max-width: 576px) {
   .ofertas {
     grid-template-columns: 100%;
-    grid-template-areas: "parrilla"
- "asadorMovil"
- "cuchillo";
+    grid-template-areas: "parrilla" "asadorMovil" "cuchillo";
     width: 100%;
     justify-items: center;
     align-items: center;
@@ -785,9 +801,7 @@ footer section {
   }
   .recetas {
     grid-template-columns: 100%;
-    grid-template-areas: "parrilla"
- "asadorMovil"
- "cuchillo";
+    grid-template-areas: "parrilla" "asadorMovil" "cuchillo";
     width: 100%;
     justify-items: center;
     align-items: center;
