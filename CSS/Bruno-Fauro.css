@@ -4,6 +4,7 @@
   /*box-sizing: border-box;*/
 }
 
+/*Utilizacion de propiedades de SASS*/
 h6 {
   color: #317bea;
 }
@@ -17,6 +18,8 @@ h3 {
 }
 
 /*Joaco, aca te dejo el DESAFIO COMPLEMENTARIO DE LA CLASE 12*/
+/*Utilizacion de propiedades de SASS*/
+/*Joaco, dejo los comentarios de las metodologias BEM, porque me queda mas comodo para buscarlas*/
 /*INDEX*/
 .colorIndex {
   background-color: lightcyan;
@@ -80,7 +83,6 @@ footer section {
   color: orange;
 }
 
-/*Aqui use metodologia BEM 1*/
 /*Aqui use metodologia BEM 2*/
 .titulo {
   background-color: #ad9b9b;
@@ -158,7 +160,6 @@ footer section {
   background-color: lightblue;
 }
 
-/*Fin metodologia BEM 2*/
 /*Aqui use metodologia BEM 3*/
 .ofertas {
   grid-template-columns: 33% 34% 33%;
@@ -198,7 +199,6 @@ footer section {
   border-radius: 20px;
 }
 
-/*Fin metodologia BEM 3*/
 /*Aqui use metodologia BEM 4*/
 .recetas {
   grid-template-columns: 33% 34% 33%;
@@ -225,7 +225,8 @@ footer section {
 .recetas__caja3 {
   grid-area: cuchillo;
   width: 70%;
-  height: 24.8rem;
+  height: 16.1rem;
+  bottom: 70px;
 }
 
 .recetas--color {
@@ -237,7 +238,6 @@ footer section {
   border-radius: 20px;
 }
 
-/*Fin metodologia BEM 4*/
 /*FIN INDEX*/
 /*PAGINA NOSOTROS*/
 #div1Nosotros {
@@ -260,6 +260,11 @@ footer section {
 }
 
 /*Aqui use metodologia BEM 5*/
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
 .chef {
   height: 350px;
   border-radius: 20px;
@@ -289,7 +294,6 @@ footer section {
   font-size: medium;
 }
 
-/*Fin metodologia BEM 5*/
 #div2Nosotros {
   width: 98%;
   height: 450px;
@@ -338,7 +342,6 @@ footer section {
   font-size: medium;
 }
 
-/*Fin metodologia BEM 6*/
 /*FIN PAGINA NOSOTROS*/
 /*PAGINA RECETAS*/
 #div1Recetas {
@@ -497,24 +500,32 @@ footer section {
   grid-area: parrilla;
   object-fit: cover;
   object-position: center center;
+  width: 80%;
+  height: 90%;
 }
 
 .productos1__caja2 {
   grid-area: asadorMovil;
   object-fit: cover;
   object-position: center center;
+  width: 80%;
+  height: 90%;
 }
 
 .productos1__caja3 {
   grid-area: cuchillo;
   object-fit: cover;
   object-position: center center;
+  width: 80%;
+  height: 90%;
 }
 
 .productos1__caja4 {
   grid-area: disco;
   object-fit: cover;
   object-position: center center;
+  width: 80%;
+  height: 90%;
 }
 
 .productos1--color {
@@ -523,7 +534,6 @@ footer section {
   margin-right: -12px;
 }
 
-/*Fin metodologia BEM 7*/
 /*Aqui use metodologia BEM 8*/
 .productos2 {
   grid-template-columns: 25% 25% 25% 25%;
@@ -539,24 +549,32 @@ footer section {
   grid-area: juego;
   object-fit: cover;
   object-position: center center;
+  width: 80%;
+  height: 90%;
 }
 
 .productos2__caja6 {
   grid-area: estaca;
   object-fit: cover;
   object-position: center center;
+  width: 80%;
+  height: 90%;
 }
 
 .productos2__caja7 {
   grid-area: guantes;
   object-fit: cover;
   object-position: center center;
+  width: 80%;
+  height: 90%;
 }
 
 .productos2__caja8 {
   grid-area: delantal;
   object-fit: cover;
   object-position: center center;
+  width: 80%;
+  height: 90%;
 }
 
 .productos2--color {
@@ -565,7 +583,6 @@ footer section {
   margin-right: -12px;
 }
 
-/*Fin metodologia BEM 8*/
 /*Aqui use metodologia BEM 9*/
 .productos3 {
   grid-template-columns: 25% 25% 25% 25%;
@@ -581,24 +598,32 @@ footer section {
   grid-area: brasero;
   object-fit: cover;
   object-position: center center;
+  width: 80%;
+  height: 90%;
 }
 
 .productos3__caja10 {
   grid-area: parrilla;
   object-fit: cover;
   object-position: center center;
+  width: 80%;
+  height: 90%;
 }
 
 .productos3__caja11 {
   grid-area: asadormovil;
   object-fit: cover;
   object-position: center center;
+  width: 80%;
+  height: 90%;
 }
 
 .productos3__caja12 {
   grid-area: cuerno;
   object-fit: cover;
   object-position: center center;
+  width: 80%;
+  height: 90%;
 }
 
 .productos3--color {
@@ -607,9 +632,12 @@ footer section {
   margin-right: -12px;
 }
 
-/*Fin metodologia BEM 9*/
 /*FIN PAGINA PRODUCTOS*/
 /*PAGINA CONTACTO*/
+.imagLogoFooter {
+  width: 150px;
+}
+
 .colorContacto {
   background-color: #dd9a6d;
   margin-top: 20px;
@@ -725,6 +753,17 @@ footer section {
   .recCostillar {
     width: 80%;
   }
+  .recetas__caja3 {
+    height: 24.8rem;
+    bottom: 0;
+  }
+  .ofertas__caja3 {
+    height: 22rem;
+    bottom: 16px;
+  }
+  .enlacesRecetas {
+    margin-top: 40px;
+  }
   @keyframes maquina {
     from {
       width: 70%;
@@ -740,7 +779,9 @@ footer section {
 @media screen and (max-width: 768px) {
   .ofertas {
     grid-template-columns: 100%;
-    grid-template-areas: "parrilla" "asadorMovil" "cuchillo";
+    grid-template-areas: "parrilla"
+ "asadorMovil"
+ "cuchillo";
     width: 100%;
     justify-items: center;
     align-items: center;
@@ -748,11 +789,16 @@ footer section {
   }
   .recetas {
     grid-template-columns: 100%;
-    grid-template-areas: "parrilla" "asadorMovil" "cuchillo";
+    grid-template-areas: "parrilla"
+ "asadorMovil"
+ "cuchillo";
     width: 100%;
     justify-items: center;
     align-items: center;
     height: 2200px;
+  }
+  .recetas__caja3 {
+    height: 19rem;
   }
   @keyframes maquina {
     from {
@@ -769,7 +815,9 @@ footer section {
 @media screen and (max-width: 576px) {
   .ofertas {
     grid-template-columns: 100%;
-    grid-template-areas: "parrilla" "asadorMovil" "cuchillo";
+    grid-template-areas: "parrilla"
+ "asadorMovil"
+ "cuchillo";
     width: 100%;
     justify-items: center;
     align-items: center;
@@ -801,11 +849,13 @@ footer section {
   }
   .recetas {
     grid-template-columns: 100%;
-    grid-template-areas: "parrilla" "asadorMovil" "cuchillo";
+    grid-template-areas: "parrilla"
+ "asadorMovil"
+ "cuchillo";
     width: 100%;
     justify-items: center;
     align-items: center;
-    height: 1500px;
+    height: 1400px;
   }
   .recetas__caja1 {
     grid-area: parrilla;
