@@ -4,31 +4,33 @@
         <meta charset="UTF-8"> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <title>A DOS FUEGOS / Inicio</title> 
+        <title>A DOS FUEGOS / Inicio</title>
         <meta name="description" content="Aqui se encuentran los mejores productos y recetas relacionadsos al asado y la cocina argentina.">
         <meta name="keywords" content="Asado, Cuchillos, Parrillas, Discos, Cubiertos, Tablas, Indumentaria para el asado, Recetas, Carne, Condimentos, Estacas, Fogoneros, Recetas criollas">
-        <link rel="stylesheet" href="CSS/bootstrap.css"> 
+        <link rel="stylesheet" href="CSS/bootstrap.css">
         <link rel="stylesheet" href="CSS/Bruno-Fauro.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     </head>
     
-    
     <body class="colorIndex">
-    <!--Comienzo barra de navegacion--> 
-        <header class="p-3 bg-dark">
+    <!--Comienzo de barra de navegacion--> 
+        <header class="p-1 bg-dark">
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                     <a href="Logos/Logo A DOS FUEGOS.png" class="d-flex align-items-center mb-2 mb-lg-0">
-                        <img id="imagLogo" src="Logos/Logo A DOS FUEGOS.png" alt="Asador con fuego prendido y nombre de la pagina">
+                        <img id="imagLogo" src="Logos/Logo Nuevo.png" alt="Asador con fuego prendido y nombre de la pagina">
                         <svg class="bi me-2" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
                     </a>
         
                     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                        <li><a href="index.html" class="nav-link px-2 text-secondary">Inicio</a></li>
-                        <li><a href="productos.html" class="nav-link px-2 text-white">Productos</a></li>
-                        <li><a href="recetas.html" class="nav-link px-2 text-white">Recetas</a></li>
-                        <li><a href="nosotros.html" class="nav-link px-2 text-white">Nosotros</a></li>
-                        <li><a href="contacto.html" class="nav-link px-2 text-white">Contacto</a></li>
+                        <li><a href="index.html" class="nav-link px-2 text-secondary escalarSeccion">Inicio</a></li>
+                        <li><a href="productos.html" class="nav-link px-2 text-dark escalarSeccion">Productos</a></li>
+                        <li><a href="recetas.html" class="nav-link px-2 text-dark escalarSeccion">Recetas</a></li>
+                        <li><a href="nosotros.html" class="nav-link px-2 text-dark escalarSeccion">Nosotros</a></li>
+                        <li><a href="contacto.html" class="nav-link px-2 text-dark escalarSeccion">Contacto</a></li>
                     </ul>
         
                     <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -45,28 +47,18 @@
     <!--Fin de barra de navegacion--> 
 
         <main>
-    <!--Comienzo de enlaces entre secciones para mejorar el SEO-->
             <section>
-                <div class="container">
-                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-                            <li class="breadcrumb-item"><a href="productos.html">Productos</a></li>
-                            <li class="breadcrumb-item"><a href="recetas.html">Recetas</a></li>
-                            <li class="breadcrumb-item"><a href="nosotros.html">Nosotros</a></li>
-                        </ol>
-                    </nav>
-                </div>
-    <!--Fin de enlaces entre secciones para mejorar el SEO-->
-
     <!--Comienzo descripcion Chef-->
                 <div id="div1Nosotros">
                     <div class="chef animate__animated animate__wobble">
                         <h3 class="chef__titulo">Chef/Cocinero</h3>
-                        <p<em>informacion importante sobre el Chef, datos descriptivos</em> .Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque assumenda unde impedit et accusamus provident nesciunt ratione tempore voluptate perferendis accusantium, mollitia commodi incidunt, consequatur eum qui obcaecati ut eligendi! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>El asado lo hace uno y lo hacemos todos. Es uno quien prende el fuego y somos todos quienes servimos el agua, el vino o la cerveza. Es uno quien quita la grasa de la carne y somos todos quienes cortamos los quesos y los salames. Es uno quien se moja mientras cocina el asado –porque en Argentina este acontecimiento no se suspende por lluvia– y somos todos quienes le sostenemos el paraguas. Es uno quien se lleva el aplauso pero somos todos quienes lo aplaudimos.</p>
                         <ul class="chef__tabla container">
+                            <i class="fas fa-phone-square-alt colorTelefono"></i>
                             <li>Contacto: 15785489.</li>
+                            <i class="fab fa-instagram colorInstagram"></i>
                             <li>Instagram: Chef/cocinero.</li>
+                            <i class="fab fa-facebook-f colorFacebook"></i>
                             <li>Facebook: Chef/cocinero.</li>
                         </ul>
                     </div>
@@ -86,10 +78,13 @@
                     </div>
                     <div class="herrero animate__animated animate__wobble">
                         <h3 class="herrero__titulo">Herrero/Artesano</h3>
-                        <p> informacion importante sobre el herrero, datos descriptivos .Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam vero cumque velit distinctio, totam nisi iusto iste alias accusamus dolor molestiae! Dicta placeat voluptatem aut voluptatibus sunt voluptate temporibus Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>   
+                        <p> Los herreros trabajan con metal. Casi siempre utilizan metal muy caliente, ya que es más fácil de doblar y moldear. Sin embargo, hay algunas tareas que pueden realizarse con el metal en forma mientras todavía está frío, utilizando herramientas muy potentes. Los herreros pueden fabricar productos nuevos, y también reparar y renovar artículos de metal.</p>   
                         <ul class="herrero__tabla container">
+                            <i class="fas fa-phone-square-alt colorTelefono"></i>
                             <li>Contacto: 15987859.</li>
+                            <i class="fab fa-instagram colorInstagram"></i>
                             <li>Instagram: Herrero.</li>
+                            <i class="fab fa-facebook-f colorFacebook"></i>
                             <li>Facebook: Herrero.</li>
                         </ul>
                     </div>
@@ -100,38 +95,68 @@
         </main>
 
     <!--Comienzo FOOTER-->
-        <footer>
-            <section>
-                <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-                    <div class="row align-items-center g-lg-5 py-5">
-                    <div class="col-lg-7 text-center text-lg-start">
-                        <h1 class="display-4 fw-bold lh-1 mb-3">A DOS FUEGOS</h1>
-                        <p class="col-lg-10 fs-4">Web dedicada a las diferentes formas de asar/Cocinar, con variada informacion sobre recetas y venta de productos para lograr tu mejor asado.</p>
-                    </div>
-                    <div class="col-md-10 mx-auto col-lg-5">
-                        <form class="p-4 p-md-5 border rounded-3 bg-light">
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Contraseña</label>
-                    </div>
-                    <div class="checkbox mb-3">
-                        <label>
-                        <input type="checkbox" value="remember-me"> Recordarme aqui
-                        </label>
-                    </div>
-                        <button class="w-100 btn btn-lg btn-primary" type="submit">Ingresar</button>
-                        <hr class="my-4">
-                        <small class="text-muted">Al hacer clic en registrarse, acepta los términos de uso de condiciones.</small>
-                        </form>
-                        </div>
-                    </div>
-                </div>            
-            </section>
-        </footer>
+    <footer>
+        <section>
+            <div class="ubicacionFooter container col-xl-10 col-xxl-8 px-4 py-3">
+                <div class="row align-items-center g-lg-1 py-1">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <img src="/Logos/Logo Nuevo.png" class="logoFooter" alt="">
+                    <h6 class="letraFooter display-4 fw-bold lh-1 mb-3">A DOS FUEGOS</h6>
+                    <p class="col-lg-10 fs-4">Web dedicada a las diferentes formas de asar/Cocinar, con variada informacion sobre recetas y venta de productos para lograr tu mejor asado.</p>
+                </div>
+                <div class="col-md-10 mx-auto col-lg-5">
+                    <form class="p-4 p-md-4 border rounded-3 bg-light">
+                <div class="form-floating mb-2">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email</label>
+                </div>
+                <div class="form-floating mb-2">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Contraseña</label>
+                </div>
+                <div class="checkbox mb-2">
+                    <label>
+                    <input type="checkbox" value="remember-me"> Recordarme aqui
+                    </label>
+                </div>
+                    <button class="w-100 btn btn-l btn-primary" type="submit">Ingresar</button>
+                    <hr class="my-4">
+                    <small class="text-muted">Al hacer clic en registrarse, acepta los términos de uso de condiciones.</small>
+                    </form>
+                </div>
+                </div>    
+            </div> 
+
+            <div class="container p-4 pb-0 text-center text-white mb-2">
+                <a class="iconoFacebook btn btn-primary btn-floating m-1" href="#!" role="button">
+                <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a class="iconoTwitter btn btn-primary btn-floating m-1" href="#!" role="button">
+                <i class="fab fa-twitter"></i>
+                </a>
+
+                <a class="iconoGoogle btn btn-primary btn-floating m-1" href="#!" role="button">
+                <i class="fab fa-google"></i>
+                </a>
+
+                <a class="iconoInstagram btn btn-primary btn-floating m-1" href="#!" role="button">
+                <i class="fab fa-instagram"></i>
+                </a>
+
+                <a class="iconoLinkedin btn btn-primary btn-floating m-1" href="#!" role="button">
+                <i class="fab fa-linkedin-in"></i>
+                </a>
+                
+                <a class="iconoGithub btn btn-primary btn-floating m-1" href="#!" role="button">
+                <i class="fab fa-github"></i>
+                </a>
+            </div>
+
+            <div class="creacion text-center p-3 container-xxl"">© 2021 Copyright Sitio web - Creado por Bruno Fauro.
+            </div>
+        </section> 
+    </footer>
     <!--Fin FOOTER-->
     <script src="Java/bootstrap.bundle.min.js"></script><!--JAVA-->
 </body>

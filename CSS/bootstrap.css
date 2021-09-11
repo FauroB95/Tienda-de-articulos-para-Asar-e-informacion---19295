@@ -3331,8 +3331,9 @@ textarea.form-control-lg {
 }
 
 .btn-outline-light {
-  color: #f8f9fa;
-  border-color: #f8f9fa;
+  color: black;
+  border-color: black;
+  background-color: lightgray;
 }
 .btn-outline-light:hover {
   color: #000;
@@ -7341,6 +7342,8 @@ textarea.form-control-lg {
 
 .text-secondary {
   color: #6c757d !important;
+  border-radius: 20px;
+  background-color: darkorange;
 }
 
 .text-success {
@@ -7365,6 +7368,9 @@ textarea.form-control-lg {
 
 .text-dark {
   color: #212529 !important;
+  border-radius: 20px;
+  background-color: darkorange;
+  margin: 2px;
 }
 
 .text-white {

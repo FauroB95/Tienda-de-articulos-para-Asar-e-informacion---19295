@@ -18,11 +18,11 @@ $anchoProductos: 80%;
 $altoProductos: 90%;
 /*Utilizacion de propiedades de SASS*/
 
-/*Joaco, dejo los comentarios de las metodologias BEM, porque me queda mas comodo para buscarlas*/
+/*Joaco/Leo, dejo los comentarios de las metodologias BEM, porque me queda mas comodo para buscarlas*/
 
 /*INDEX*/
 .colorIndex {
-    background-color: lightcyan; }
+    background-color: #778899a3; }
 
 #imagLogo {
     width: ($ancho*2)-10px;
@@ -30,7 +30,23 @@ $altoProductos: 90%;
     display: block; }
 
 header {
-    background-image: linear-gradient(rgba(106, 189, 182, 0.815), #a1b8bb) !important;
+    background-color: lightyellow !important;
+    border-bottom: 5px double;
+    border-top: 10px solid burlywood;
+}
+
+.escalarSeccion{
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 600;
+}
+
+.escalarSeccion:hover{
+    transform: scale(1,1.3);
+}
+
+.detalles li{
+    margin: 2px;
+    border-radius: 20px;
 }
 
 svg {
@@ -59,12 +75,44 @@ svg {
     margin-bottom: 15px;
     margin-top: 15px; }
 
+.divisorUbicacion {
+    color: white;
+    background-color: black;
+    font-family: 'Patrick Hand', cursive;
+    font-size: auto;
+    text-align: center;
+    height: $alto;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px; }
+
+.iframeMapa {
+    border-radius: 20px;
+    height: ($alto*8)+20px;
+    width: $ancho*10.5;
+    margin-right: 20px;}
+
+.letraFooter {
+    font-family: 'Zen Tokyo Zoo', cursive;
+}
+
+.creacion {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 footer section {
-    background-image: linear-gradient(#a1b8bb, rgba(106, 189, 182, 0.815), #a1b8bb) !important; }
+    background-color: wheat; }
+
+.logoFooter {
+    width: $ancho*4;
+    height: $alto*4;
+    margin-left: $ancho+30px;
+}
+
+.logo
 
         /*Aqui use metodologia BEM 1*/
 .seccionCarrousel {
-    margin-top: 20px;
     border-radius: 20px; }
 
 .seccionCarrousel__letras {
@@ -73,11 +121,23 @@ footer section {
 
 .seccionCarrousel--decoracion {
     text-decoration: underline;
-    color: orange; }
+    color: white; 
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 600;
+    background-color: dodgerblue;
+    width: 30%;
+    box-shadow: 0 0 5px 2px #000000;
+    border-radius: 20px;}
+
+.letrasp {
+    color: white;
+    text-shadow: 5px 3px black;
+}
 
         /*Aqui use metodologia BEM 2*/
 .titulo {
-    background-color: #ad9b9b;
+    background-color: wheat;
+    font-family: 'Zen Tokyo Zoo', cursive;
     padding-bottom: 20px;
     padding-top: 20px;
     border-bottom-left-radius: 20px;
@@ -89,16 +149,16 @@ footer section {
 
 .animacionTitulo h1 {
     float: left;
-    color: black;
+    color: rgb(49, 123, 234);
     position: relative;
-    background-color: #ad9b9b;
+    background-color: wheat;
     text-align: center; }
 
 .animacionTitulo h1 span {
     position: absolute;
     right: 0;
     width: 100%;
-    background-color: #ad9b9b;
+    background-color: wheat;
     border-left: 1px solid black;
     animation: maquina 4s infinite alternate steps(13); }
 
@@ -116,14 +176,15 @@ footer section {
     color: white; }
 
     .titulo__alineado {
-    text-align: center; }
+    text-align: center;
+    color: black!important;}
     
     .titulo--alto {
     padding-top: 20px;
     margin-top: 10px; }
 
     .titulo--colorFondo {
-    background-color: #f1dcbf;
+    background-color: lightcyan;
     opacity: 0.8;
     border-radius: 20px; }
 
@@ -136,9 +197,53 @@ footer section {
 
     .escalarRedes:hover {
     transform: scale(1.3);
-    background-color: lightblue; }
+    background-color: darksalmon; }
 
+    .escalarOfertas:hover {
+    transform: scale(1.1); }
+
+    .escalarRecetas:hover {
+        transform: scale(1.1); }
+
+    .iconoFacebook {
+        border-radius: 100%;
+        background-color: #3b5998;
+    }
+
+    .iconoTwitter {
+        border-radius: 100%;
+        background-color: #55acee;
+    }
+
+    .iconoGoogle {
+        border-radius: 100%;
+        background-color: #dd4b39;
+    }
+
+    .iconoInstagram {
+        border-radius: 100%;
+        background-color: #ac2bac;
+    }
+
+    .iconoLinkedin {
+        border-radius: 100%;
+        background-color: #0082ca;
+    }
+
+    .iconoGithub {
+        border-radius: 100%;
+        background-color: #333333;
+    }
+
+    .ubicacionFooter{
+        margin-bottom: -70px;
+    }
         /*Aqui use metodologia BEM 3*/
+
+.altoCarousel {
+    height: 60vw;
+}
+
 .ofertas {
     grid-template-columns: 33% 34% 33%;
     grid-template-areas: "parrilla asadorMovil cuchillo";
@@ -165,10 +270,10 @@ footer section {
     height: $altoOfertas + 8.8rem;}
 
 .ofertas--color {
-    background-color: lightsteelblue; }
+    background-color: lightskyblue; }
 
 .ofertas--colorFondo {
-    background-color: #f1dcbf;
+    background-color: lightcyan;
     border-radius: 20px; }
 
         /*Aqui use metodologia BEM 4*/
@@ -198,11 +303,53 @@ footer section {
     bottom: 70px;}
 
 .recetas--color {
-    background-color: lightsteelblue; }
+    background-color: lightskyblue; }
 
 .recetas--colorFondo {
-    background-color: #f1dcbf;
+    background-color: lightcyan;
     border-radius: 20px; }
+
+.ubicacion {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.textoUbicacion {
+    padding: 0 8%;
+    text-align: center;
+}
+
+.colorUbicacion {
+    background-color: lightskyblue;
+    border-radius: 20px;
+    padding: 50px;
+}
+.botonUbicacion {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.botonUbicacion a {
+    background-color: #0d6efd;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: cursive;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.botonUbicacion:hover {
+    transform: scale(1.5);
+}
+
+.iconos {
+    color: black;
+    font-family: 'Zen Tokyo Zoo', cursive;
+}
 
 /*FIN INDEX*/
 
@@ -216,7 +363,7 @@ footer section {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    background-color: #f1dcbf;
+    background-color: lightcyan;
     border-radius: 20px;
     margin-left: 10px;
     margin-bottom: 30px;
@@ -245,7 +392,7 @@ iframe {
     border-radius: 20px; }
 
 .chef__titulo {
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Zen Tokyo Zoo', cursive;
     font-size: xx-large;
     text-decoration: underline black;
     color: darkgoldenrod; }
@@ -263,7 +410,7 @@ iframe {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    background-color: #f1dcbf;
+    background-color: lightcyan;
     border-radius: 20px;
     margin-left: 10px;
     margin-bottom: 30px; }
@@ -287,7 +434,7 @@ iframe {
     border-radius: 20px; }
 
 .herrero__titulo {
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Zen Tokyo Zoo', cursive;
     font-size: xx-large;
     text-decoration: underline black;
     color: darkgoldenrod; }
@@ -307,7 +454,7 @@ iframe {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #f1dcbf;
+    background-color: lightcyan;
     border-radius: 20px;
     margin-left: 10px;
     margin-top: 20px;
@@ -327,7 +474,7 @@ iframe {
     margin: auto; }
 
 .recAchurada h3 {
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Zen Tokyo Zoo', cursive;
     font-size: xx-large;
     text-decoration: underline black;
     color: darkgoldenrod; }
@@ -346,7 +493,7 @@ iframe {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #f1dcbf;
+    background-color: lightcyan;
     border-radius: 20px;
     margin-left: 10px;
     margin-top: 20px;
@@ -366,7 +513,7 @@ iframe {
     margin: auto; }
 
 .recBondiola h3 {
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Zen Tokyo Zoo', cursive;
     font-size: xx-large;
     text-decoration: underline black;
     color: darkgoldenrod; }
@@ -385,7 +532,7 @@ iframe {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #f1dcbf;
+    background-color: lightcyan;
     border-radius: 20px;
     margin-left: 10px;
     margin-top: 20px;
@@ -404,7 +551,7 @@ iframe {
     background-color: white; }
 
 .recCostillar h3 {
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Zen Tokyo Zoo', cursive;
     font-size: xx-large;
     text-decoration: underline black;
     color: darkgoldenrod; }
@@ -418,6 +565,18 @@ iframe {
 
 .colorTabla {
     background-color: #dd9a6d; }
+
+.colorTelefono {
+    color: green;
+}
+
+.colorInstagram {
+    color: red;
+}
+
+.colorFacebook {
+    color: blue;
+}
 
 /*FIN PAGINA RECETAS*/
 
@@ -438,31 +597,35 @@ iframe {
     object-fit: cover;
     object-position: center center;
     width: $anchoProductos;
-    height: $altoProductos; }
+    height: $altoProductos;
+    border: 2px solid black; }
 
 .productos1__caja2 {
     grid-area: asadorMovil;
     object-fit: cover;
     object-position: center center;
     width: $anchoProductos;
-    height: $altoProductos; }
+    height: $altoProductos;
+    border: 2px solid black; }
 
 .productos1__caja3 {
     grid-area: cuchillo;
     object-fit: cover;
     object-position: center center; 
     width: $anchoProductos;
-    height: $altoProductos; }
+    height: $altoProductos;
+    border: 2px solid black; }
 
 .productos1__caja4 {
     grid-area: disco;
     object-fit: cover;
     object-position: center center;
     width: $anchoProductos;
-    height: $altoProductos; }
+    height: $altoProductos;
+    border: 2px solid black; }
 
 .productos1--color {
-    background-color: lightsteelblue;
+    background-color: lightskyblue;
     margin-left: -12px;
     margin-right: -12px; }
 
@@ -481,31 +644,35 @@ iframe {
     object-fit: cover;
     object-position: center center;
     width: $anchoProductos;
-    height: $altoProductos; }
+    height: $altoProductos;
+    border: 2px solid black; }
 
 .productos2__caja6 {
     grid-area: estaca;
     object-fit: cover;
     object-position: center center;
     width: $anchoProductos;
-    height: $altoProductos; }
+    height: $altoProductos;
+    border: 2px solid black; }
 
 .productos2__caja7 {
     grid-area: guantes;
     object-fit: cover;
     object-position: center center;
     width: $anchoProductos;
-    height: $altoProductos; }
+    height: $altoProductos;
+    border: 2px solid black; }
 
 .productos2__caja8 {
     grid-area: delantal;
     object-fit: cover;
     object-position: center center;
     width: $anchoProductos;
-    height: $altoProductos; }
+    height: $altoProductos;
+    border: 2px solid black; }
 
 .productos2--color {
-    background-color: lightsteelblue;
+    background-color: lightskyblue;
     margin-left: -12px;
     margin-right: -12px; }
 
@@ -524,31 +691,35 @@ iframe {
     object-fit: cover;
     object-position: center center;
     width: $anchoProductos;
-    height: $altoProductos; }
+    height: $altoProductos;
+    border: 2px solid black; }
 
 .productos3__caja10 {
     grid-area: parrilla;
     object-fit: cover;
     object-position: center center;
     width: $anchoProductos;
-    height: $altoProductos; }
+    height: $altoProductos;
+    border: 2px solid black; }
 
 .productos3__caja11 {
     grid-area: asadormovil;
     object-fit: cover;
     object-position: center center;
     width: $anchoProductos;
-    height: $altoProductos; }
+    height: $altoProductos;
+    border: 2px solid black; }
 
 .productos3__caja12 {
     grid-area: cuerno;
     object-fit: cover;
     object-position: center center;
     width: $anchoProductos;
-    height: $altoProductos; }
+    height: $altoProductos;
+    border: 2px solid black; }
 
 .productos3--color {
-    background-color: lightsteelblue;
+    background-color: lightskyblue;
     margin-left: -12px;
     margin-right: -12px; }
 
@@ -561,11 +732,11 @@ iframe {
 }
 
 .colorContacto {
-    background-color: #dd9a6d;
+    background-color: grey;
     margin-top: 20px; }
 
 .colorFormulario {
-    background-color: rgba(110, 122, 134, 0.651);
+    background-color: burlywood;
     margin-top: 20px; }
 
 .row {
@@ -573,12 +744,36 @@ iframe {
     margin-left: auto !important;
     margin-bottom: 20px; }
 
+.letraFormulario {
+    font-family: 'Zen Tokyo Zoo', cursive;
+}
+
 /*FIN PAGINA CONTACTO*/
 
 /*FIN ESTILOS NORMALES, DEBAJO ESTAN LOS MEDIA QUERIES*/
 
 /*Comienzo media queries 992*/
 @media screen and (max-width: 992px) {
+
+    .ubicacionFooter{
+        margin-bottom: 0px;
+    }
+
+    .logoFooter {
+        margin-left: 0px;
+    }
+
+    .ubicacion {
+        margin: 20px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .iframeMapa {
+        height: $alto*7;
+        width: 100%;
+        margin-top: 20px;}
+
     .ofertas {
         width: auto;
         justify-items: center;
@@ -701,6 +896,9 @@ iframe {
 
 /*Comienzo media queries 576*/
     @media screen and (max-width: 576px) {
+    .logoFooter {
+        width: $ancho*2;
+        height: $alto*2; }
     .ofertas {
         grid-template-columns: 100%;
         grid-template-areas: "parrilla"
@@ -808,3 +1006,78 @@ iframe {
         width: 0%; } } }
 
 /*Fin media queries 576*/
+
+/*Comienzo media queries 576*/
+
+@media screen and (max-width: 400px) {
+    #div1Recetas {
+        height: $alto*19;
+        margin-top: 20px;
+        margin-bottom: 20px; }
+    
+    .recAchurada {
+        height: $alto*15;
+        margin: auto; }
+        
+    .recAchurada h3 {
+        font-size: x-large; }
+
+    #div2Recetas {
+        height: $alto*21;
+        margin-top: 20px;
+        margin-bottom: 20px; }
+        
+    .recBondiola {
+        height: $alto*12;
+        margin: auto;
+        margin-bottom: 180px; }
+            
+    .recBondiola h3 {
+        font-size: x-large; }
+            
+    .iframeRecBondiola {
+        border-radius: 20px;
+        height: $alto*7;
+        margin-top: 170px;
+        margin-bottom: 30px;}
+
+    #div3Recetas {
+        height: $alto*19;
+        margin-top: 20px;
+        margin-bottom: 20px; }
+        
+    .recCostillar {
+        height: $alto*15;
+        margin: auto; }
+            
+    .recCostillar h3 {
+        font-size: x-large; }
+
+    #div1Nosotros {
+        height: $alto*18; }
+        
+    #div1Nosotros div {
+        flex-basis: 300px; }
+
+    .chef {
+        height: $alto*10; }
+
+    .chef__imgLaucha {
+        width: 100%;
+        height: $alto*7;
+        border-radius: 20px; }
+
+        #div2Nosotros {
+            height: $alto*18; }
+            
+        #div2Nosotros div {
+            flex-basis: 300px; }
+    
+        .herrero {
+            height: $alto*10; }
+    
+        .herrero__imgHerrero {
+            width: 100%;
+            height: $alto*7;
+            border-radius: 20px; }
+    }
