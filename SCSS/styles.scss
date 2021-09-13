@@ -896,6 +896,8 @@ iframe {
 
 /*Comienzo media queries 576*/
     @media screen and (max-width: 576px) {
+    .titulo--alto {
+        width: 96%!important; }
     .logoFooter {
         width: $ancho*2;
         height: $alto*2; }

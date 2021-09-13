@@ -1003,6 +1003,9 @@ iframe {
 /*Fin media queries 768*/
 /*Comienzo media queries 576*/
 @media screen and (max-width: 576px) {
+  .titulo--alto {
+    width: 96% !important;
+  }
   .logoFooter {
     width: 100px;
     height: 100px;
